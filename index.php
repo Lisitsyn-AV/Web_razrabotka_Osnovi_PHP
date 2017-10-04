@@ -24,6 +24,9 @@
 </header>
 
 <div id="content">
+  <?php 
+    echo "Hello World";
+  ?>
    <!-- <div id="promo">
         <h1 id="promoText">
             Здесь будет рекламный заголовок
