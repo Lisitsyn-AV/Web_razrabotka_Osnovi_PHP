@@ -25,8 +25,19 @@
 
 <div id="content">
   <?php 
-    $myVariable = 555;
-    var_dump($myVariable); 
+
+    $id = 1;
+   $name = 'Iphone';
+   $desc = 'Здесь описание для телефона Iphone';
+   $img = '/images/goods/iphone.jpg';
+   $price = '2000 $';
+
+   echo $id . '<br>';
+   echo $name . '<br>';
+   echo $desc . '<br>';
+   echo $img . '<br>';
+   echo $price . '<br>';
+   
   ?>
    <!-- <div id="promo">
         <h1 id="promoText">
