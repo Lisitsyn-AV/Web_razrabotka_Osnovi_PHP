@@ -25,8 +25,8 @@
 
 <div id="content">
   <?php 
-    echo "Hello World"
-    echo "Пока!"
+    echo "Hello World!    ";
+    echo "Пока!";
   ?>
    <!-- <div id="promo">
         <h1 id="promoText">
