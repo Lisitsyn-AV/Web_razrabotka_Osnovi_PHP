@@ -36,7 +36,7 @@
    echo $name . '<br>';
    echo $desc . '<br>';
    echo $img . '<br>';
-   echo $price . '<br>';
+   echo $price . '<br>'. '<br>';
    
    $product = [1, 'Iphone', 'Здесь описание для телефона Iphone', '/images/goods/iphone.jpg', '2000 $'];
     echo $product[2];
@@ -44,7 +44,23 @@
     $product[9] = 28;
     $product[] = 44;
     var_dump($product);
+    $product = [
+            'id' => 1,
+            'name' => 'Iphone',
+            'desc' => 'Здесь описание для телефона Iphone',
+            'img' => '/images/goods/iphone.jpg',
+            'price' => '2000 $'
+        ];
+        
 
+        echo  $product ['name'] . "<br>";
+        echo  $product['desc'] . "<br>";
+        echo  $product['img'] . "<br>" ;
+        echo  $product['price'] . "<br>" . "<br>";
+       
+        $product['count'] = 162;
+        var_dump($product);
+       
 
   ?>
    <!-- <div id="promo">
@@ -52,7 +68,7 @@
             Здесь будет рекламный заголовок
         </h1>
     </div>
-
+ 
     <div id="mainTextWrap">
         <div id="mainText">
             Здесь будет текст для главной страницы. Здесь будет текст для главной страницы. Здесь будет текст для главной страницы.
