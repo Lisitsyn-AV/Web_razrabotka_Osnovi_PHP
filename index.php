@@ -38,6 +38,14 @@
    echo $img . '<br>';
    echo $price . '<br>';
    
+   $product = [1, 'Iphone', 'Здесь описание для телефона Iphone', '/images/goods/iphone.jpg', '2000 $'];
+    echo $product[2];
+    $product[] = 'Сегодня скидка 20%';
+    $product[9] = 28;
+    $product[] = 44;
+    var_dump($product);
+
+
   ?>
    <!-- <div id="promo">
         <h1 id="promoText">
