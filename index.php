@@ -68,6 +68,8 @@
         "discount" => 20,
         "count" => 34
          ];  
+         
+         $goods[2]["discount"]= 20;
          echo "<pre>";
          var_dump($goods);
     ?>
