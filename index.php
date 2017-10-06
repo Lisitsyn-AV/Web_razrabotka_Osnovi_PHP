@@ -24,45 +24,40 @@
 </header>
 
 <div id="content">
-  <?php 
+  
 
-    $id = 1;
-   $name = 'Iphone';
-   $desc = 'Здесь описание для телефона Iphone';
-   $img = '/images/goods/iphone.jpg';
-   $price = '2000 $';
-
-   echo $id . '<br>';
-   echo $name . '<br>';
-   echo $desc . '<br>';
-   echo $img . '<br>';
-   echo $price . '<br>'. '<br>';
-   
-   $product = [1, 'Iphone', 'Здесь описание для телефона Iphone', '/images/goods/iphone.jpg', '2000 $'];
-    echo $product[2];
-    $product[] = 'Сегодня скидка 20%';
-    $product[9] = 28;
-    $product[] = 44;
-    var_dump($product);
-    $product = [
+    <?php
+    $goods = [
+        [
             'id' => 1,
             'name' => 'Iphone',
-            'desc' => 'Здесь описание для телефона Iphone',
+            'desc' => 'Описание для Iphone',
             'img' => '/images/goods/iphone.jpg',
             'price' => '2000 $'
-        ];
-        
+        ],
+        [
+            'id' => 2,
+            'name' => 'HTC',
+            'desc' => 'Описание для HTC',
+            'img' => '/images/goods/htc.jpg',
+            'price' => '1200 $'
+        ],
+        [
+            'id' => 3,
+            'name' => 'Samsung',
+            'desc' => 'Описание для Samsung',
+            'img' => '/images/goods/samsung.jpg',
+            'price' => '1400 $'
+        ],
+    ];
 
-        echo  $product ['name'] . "<br>";
-        echo  $product['desc'] . "<br>";
-        echo  $product['img'] . "<br>" ;
-        echo  $product['price'] . "<br>" . "<br>";
-       
-        $product['count'] = 162;
-        var_dump($product);
-       
+    echo "<pre>";
+    var_dump($goods);
+    ?>
 
-  ?>
+
+
+
    <!-- <div id="promo">
         <h1 id="promoText">
             Здесь будет рекламный заголовок
