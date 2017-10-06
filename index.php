@@ -51,13 +51,13 @@
         ],
     ];
 
-    foreach ($goods as $good) {
+    foreach ($goods as  $good) {
         echo $good['id'] . '<br>';
         echo $good['name'] . '<br>';
         echo $good['desc'] . '<br>';
         echo $good['img'] . '<br>';
         echo $good['price'] . '<br>';
-
+        echo "<hr>";
     }
     ?>
 
