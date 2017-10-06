@@ -53,8 +53,13 @@
 
     echo "<pre>";
     var_dump($goods);
+    echo "<br>"; 
+    echo "<pre>";
+    echo $goods [1] ["name"] . "<br>" ;
+    echo $goods [2] ["desc"] . "<br>" ;
+    echo $goods [0] ["price"] . "<br>" ;
+    
     ?>
-
 
 
 
