@@ -51,7 +51,8 @@
         ],
     ];
 
-    foreach ($goods as  $good) {
+    foreach ($goods as $key => $good) {
+        echo 'Ключ массива' . $key . '<br>';
         echo $good['id'] . '<br>';
         echo $good['name'] . '<br>';
         echo $good['desc'] . '<br>';
