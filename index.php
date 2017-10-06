@@ -51,27 +51,14 @@
         ],
     ];
 
-    echo "<pre>";
-    var_dump($goods);
-    echo "<br>"; 
-    echo "<pre>";
-    echo $goods [1] ["name"] . "<br>" ;
-    echo $goods [2] ["desc"] . "<br>" ;
-    echo $goods [0] ["price"] . "<br>" ;
+    foreach ($goods as $good) {
+        echo $good['id'] . '<br>';
+        echo $good['name'] . '<br>';
+        echo $good['desc'] . '<br>';
+        echo $good['img'] . '<br>';
+        echo $good['price'] . '<br>';
 
-    $goods [] = [
-        "id" => 4,
-        'name' => "Explay",
-        'desc' => 'Описание для Explay',
-        'img' => '/images/goods/explay.jpg',
-        'price' => '1400 $',
-        "discount" => 20,
-        "count" => 34
-         ];  
-         
-         $goods[2]["discount"]= 20;
-         echo "<pre>";
-         var_dump($goods);
+    }
     ?>
 
 
