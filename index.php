@@ -52,7 +52,12 @@
     ];
 
     echo "<pre>";
-    var_dump($_GET)
+    var_dump($_GET);
+
+    if (5 + 3 == 8) {
+        echo "Я написана потому , что выражение есть thrue";
+        # code...
+    }
     ?>
 
 
