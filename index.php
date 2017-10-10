@@ -13,10 +13,10 @@
         <div id="logo"></div>
         <div id="companyName">Brand</div>
         <div id="navWrap">
-            <a href="#">
+            <a href="/">
                 Главная
             </a>
-            <a href="#">
+            <a href="index.php?page=shop">
                 Магазин
             </a>
         </div>
@@ -86,8 +86,8 @@
         </div>
 
         <div id="footerNav">
-            <a href="#">Главная</a>
-            <a href="#">Магазин</a>
+            <a href="/">Главная</a>
+            <a href="index.php?page=shop">Магазин</a>
         </div>
 
         <div id="social">
