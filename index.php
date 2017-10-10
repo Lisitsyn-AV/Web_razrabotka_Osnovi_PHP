@@ -52,10 +52,10 @@
     ];
 
   
-     $page = $_GET['page'];
+    $page = $_GET['page'];
 
     if (!isset($page)) {
-        echo 'здесь вместо этой надписи будет контент для главной страницы';
+        require ('templates/main.php');
     } elseif ($page == 'shop') {
         echo 'здесь будет страница с товарами';
     } elseif ($page == 'product') {
@@ -64,7 +64,7 @@
 
     ?>
 
-
+</div>
 
 
 <footer>
