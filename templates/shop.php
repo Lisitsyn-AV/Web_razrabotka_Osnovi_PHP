@@ -1,8 +1,8 @@
 <h1>
                 Каталог товаров
 </h1>
-
-<?php foreach ($goods as $good): ?>
+<div>
+    <?php foreach ($goods as $good): ?>
     <div class="shopUnit">
         <img src="http://placehold.it/308x231" />
 
@@ -21,4 +21,6 @@
             Подробнее
         </a>
     </div>
-<?php endforeach; ?>
+
+    <?php endforeach; ?>
+</div>
