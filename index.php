@@ -66,47 +66,6 @@
 
 
 
-   
-
-    <div style="width: 1100px; margin: 0 auto">
-        <hr>
-        <h2>
-            Это будет отдельная страница с открытым магзином
-        </h2>
-
-        <div style="width: 1100px; margin: 0 auto">
-            
-
-            
-        </div>
-
-        <div style="margin-bottom: 20px; float: left;">
-            <hr>
-            <h2>
-                Это будет отдельная страница с открытым товаром
-            </h2>
-
-            <div id="openedProduct-img">
-                <img src="http://placehold.it/342x260">
-            </div>
-            <div id="openedProduct-content">
-                <h1 id="openedProduct-name">
-                    Название продукта
-                </h1>
-                <div id="openedProduct-desc">
-                    Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                    Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                    Здесь будет описание продукта. Здесь будет описание продукта. Здесь будет описание продукта.
-                </div>
-                <div id="openedProduct-price">
-                    Цена: 0000 $
-                </div>
-            </div>
-        </div>
-
-
-    </div>-->
-</div>
 
 <footer>
     <div id="footerInside">
