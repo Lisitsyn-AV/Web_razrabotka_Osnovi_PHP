@@ -57,7 +57,7 @@
     if (!isset($page)) {
         require ('templates/main.php');
     } elseif ($page == 'shop') {
-        echo 'здесь будет страница с товарами';
+        require ('templates/shop.php');
     } elseif ($page == 'product') {
         echo 'а тут у нас будет страница с открытым товаром';
     }
