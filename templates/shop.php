@@ -15,7 +15,7 @@
         <div class="shopUnitPrice">
             Цена: <?php echo $good['price'];  ?>
         </div>
-        <a href="#" class="shopUnitMore">
+        <a href="index.php?page=product&id=<?php echo good['id']; ?>" class="shopUnitMore">
             Подробнее
         </a>
     </div>
