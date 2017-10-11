@@ -27,40 +27,48 @@
   
 
     <?php
-    $goods = [
-        [
-            'id' => 1,
-            'name' => 'Iphone',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-            'img' => '/images/goods/iphone.jpg',
-            'price' => '2000 $'
-        ],
-        [
-            'id' => 2,
-            'name' => 'HTC',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-            'img' => '/images/goods/htc.jpg',
-            'price' => '1200 $'
-        ],
-        [
-            'id' => 3,
-            'name' => 'Samsung',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-            'img' => '/images/goods/samsung.jpg',
-            'price' => '1400 $'
-        ],
-    ];
+        $goods = [
+            [
+                'id' => 1,
+                'name' => 'Iphone',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
+                'img' => '/images/goods/iphone.jpg',
+                'price' => '2000 $'
+            ],
+            [
+                'id' => 2,
+                'name' => 'HTC',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
+                'img' => '/images/goods/htc.jpg',
+                'price' => '1200 $'
+            ],
+            [
+                'id' => 3,
+                'name' => 'Samsung',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
+                'img' => '/images/goods/samsung.jpg',
+                'price' => '1400 $'
+            ],
+        ];
 
-  
-    $page = $_GET['page'];
+      
+        $page = $_GET['page'];
 
-    if (!isset($page)) {
-        require ('templates/main.php');
-    } elseif ($page == 'shop') {
-        require ('templates/shop.php');
-    } elseif ($page == 'product') {
-        echo 'а тут у нас будет страница с открытым товаром';
-    }
+        if (!isset($page)) {
+            require ('templates/main.php');
+        } elseif ($page == 'shop') {
+            require ('templates/shop.php');
+        } elseif ($page == 'product') {
+            $id = $_GET['id'];  // Получим id продукта, который есть в url, заносим его в переменную $id. Эту переменную получает из массива _GET
+            $good = [];          // создадим контейнет для товара, который дудет отображаться на странице. Товат пердставляет из себя массив. Создадим пременную good и поставим ей значение пустого массива
+            foreach ($goods as $product) {  // Найдём товар в массиве goods.  Будем перебирать весь массив с товарами goods. Получаетм значение этого товара product.
+                if ($product['id'] == $id) {  // Если id продуста равняется id, который мы хотим получить. Проверяем id каждого товара. Сравниваем с тем что запрашивается в адресной строке. Если выполняется true, то мы нашли нужный нам товар.
+                    $good = $product;        // тогда в пременную $good  мы и положим этот продукт product. Тем саммым будет массив, который нам нужен.
+                    break;                // останавливаем цикл
+                }
+            }
+            require('templates/openedProduct.php');
+        }
 
     ?>
 
